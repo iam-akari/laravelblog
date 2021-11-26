@@ -23,3 +23,5 @@ Route::get('/blog/{id}', 'BlogController@showDetail')->name('show');
 Route::get('/blog/edit/{id}', 'BlogController@showEdit')->name('edit');
 //ブログ更新
 Route::post('/blog/update', 'BlogController@exeUpdate')->name('update');
+//ブログ削除
+Route::post('/blog/delete/{id}', 'BlogController@exeDelete')->name('delete');
